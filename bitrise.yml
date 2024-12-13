@@ -1,0 +1,23 @@
+pipelines:
+  pipeline1:
+    workflows:
+      workflow1:
+        source: wf
+        inputs:
+        - key1: value1
+      workflow2:
+        source: wf
+        inputs:
+        - key2: value2      
+workflows:
+  wf:
+    steps:
+      - script:
+          title: Print env vars
+          inputs:
+            - content: |
+                #!/bin/bash
+                set -ex
+                
+                echo "key1: $key1"
+                echo "key2: $key2"
