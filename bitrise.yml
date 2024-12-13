@@ -11,6 +11,8 @@ pipelines:
         inputs:
         - key2: value2      
 workflows:
+  workflow1: {}
+  workflow2: {}
   wf:
     steps:
       - script:
