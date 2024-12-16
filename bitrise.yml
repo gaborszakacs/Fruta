@@ -3,15 +3,15 @@ pipelines:
   pipeline1:
     workflows:
       workflow1:
-        source: wf
+        uses: base_workflow
         inputs:
         - key1: value1
       workflow2:
-        source: wf
+        uses: base_workflow
         inputs:
         - key2: value2      
 workflows:
-  wf:
+  base_workflow:
     steps:
       - script:
           title: Print env vars
