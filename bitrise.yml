@@ -7,10 +7,12 @@ pipelines:
         uses: base_workflow
         inputs:
         - key1: value1
+        - test_shard_index: 1
       workflow2:
         uses: base_workflow
         inputs:
-        - key2: value2      
+        - key2: value2  
+        - test_shard_index: 2
 workflows:
   base_workflow:
     steps:
