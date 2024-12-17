@@ -25,3 +25,4 @@ workflows:
                 
                 echo "key1: $key1"
                 echo "key2: $key2"
+                echo "test_shard_index: $test_shard_index"
