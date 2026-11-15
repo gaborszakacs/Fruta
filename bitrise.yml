@@ -3,8 +3,8 @@ format_version: '13'
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 meta:
   bitrise.io:
-    machine_type_id: g2.mac.large
-    stack: osx-xcode-16.0.x
+    machine_type_id: g2.linux.medium
+    stack: ubuntu-resolute-26.04-bitrise-2026-android
 pipelines:
   pipeline1:
     workflows:
