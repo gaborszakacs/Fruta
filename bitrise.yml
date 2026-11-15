@@ -4,7 +4,7 @@ default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 meta:
   bitrise.io:
     machine_type_id: g2.linux.medium
-    stack: ubuntu-noble-24.04-bitrise-2025-android
+    stack: ubuntu-resolute-26.04-bitrise-2026-android
 pipelines:
   pipeline1:
     workflows:
